@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ MotivAí - Gerador de Motivação</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Emojis do fundo -->
+    <div class="emoji-background">
+        <span>✨</span>
+        <span>💪</span>
+        <span>❤️</span>
+        <span>🔥</span>
+        <span>🌟</span>
+        <span>🚀</span>
+        <span>😊</span>
+        <span>💎</span>
+        <span>🌈</span>
+        <span>⭐</span>
+        <span>🦋</span>
+        <span>🏆</span>
+        <span>☀️</span>
+        <span>💫</span>
+        <span>🥰</span>
+        <span>🎯</span>
+        <span>🙌</span>
+        <span>🌻</span>
+        <span>🧠</span>
+        <span>👑</span>
+    </div>
+
+    <main class="container">
+
+        <div class="card">
+
+            <div class="logo">✨</div>
+
+            <h1>Motiv<span>Aí</span></h1>
+
+            <p class="subtitle">
+                Está desmotivado? Conte o que está acontecendo.
+                <br>
+                Eu tenho uma mensagem para você. 💛
+            </p>
+
+            <textarea
+                id="userText"
+                placeholder="Ex: Estou cansado de estudar e sinto que não vou conseguir..."
+            ></textarea>
+
+            <button onclick="gerarMotivacao()">
+                <span>✨</span> Me motive!
+            </button>
+
+            <div id="resultado" class="resultado">
+                <div class="resultado-icon">💭</div>
+                <p>Escreva o que está sentindo e descubra sua mensagem...</p>
+            </div>
+
+            <button
+                id="novaFrase"
+                class="nova-frase"
+                onclick="gerarMotivacao()"
+                style="display: none;"
+            >
+                🔄 Quero outra frase
+            </button>
+
+        </div>
+
+        <p class="footer">
+            Feito para lembrar você de uma coisa:
+            <strong>você é capaz. 💛</strong>
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
